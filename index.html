@@ -122,11 +122,13 @@
                 <div class="about-panel col-lg-6">
                     <h3>Registra a tu pre escolar</h3>
                     <p>para intercambiar tus juguetes de comida por nuestros juguetes de frutas y vegetales.</p>
-                    <form class="" action="index.html" method="post">
-                        <input type="text" name="" value="" placeholder="NOMBRE">
-                        <input type="text" name="" value="" placeholder="CORREO ELECTRÓNICO">
-                        <input type="text" name="" value="" placeholder="TELÉFONO">
-                        <button class="butt butt-yell" type="button" name="button">Enviar</button>
+                    <form role="form" id="mazola-form">
+                        <input type="text" name="name" placeholder="NOMBRE" required>
+                        <input type="email" name="email" placeholder="CORREO ELECTRÓNICO" required>
+                        <input type="text" name="phone" placeholder="TELÉFONO" required>
+                        <button class="butt butt-yell" type="submit" name="button">Enviar</button>
+                        <p class="form-response thanks">¡Gracias!</p>
+                        <p class="form-response error">Hubo un error.<br/>Intente de nuevo.</p>
                     </form>
                 </div>
             </div>

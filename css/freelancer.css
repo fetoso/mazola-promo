@@ -434,10 +434,18 @@ section.success {
   margin: 40px 0;
 }
 #about form input {
+  color: #000;
   width: 100%;
   margin-top: 6px;
   padding: 15px;
   font-size: 16px;
+}
+#about form p {
+  margin-top: 15px;
+  text-align: center;
+}
+#about form .form-response {
+  display: none;
 }
 #about form .butt-yell {
   margin-top: 6px;
