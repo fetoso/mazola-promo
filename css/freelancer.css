@@ -1,10 +1,16 @@
 /*!
  * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2016 Start Bootstrap
+ * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/AvenirLTStd-Light.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
 p {
@@ -27,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -43,7 +49,7 @@ hr.star-primary {
 hr.star-light:after,
 hr.star-primary:after {
   content: "\f005";
-  font-family: FontAwesome;
+  font-family: 'Avenir';
   display: inline-block;
   position: relative;
   top: -0.8em;
@@ -69,8 +75,10 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #18BC9C;
-  color: white;
+  background: #fff;
+  background-image: url(../img/header-w-logo.png);
+  background-position: center;
+  background-size: cover;
 }
 header .container {
   padding-top: 100px;
@@ -82,7 +90,7 @@ header img {
 }
 header .intro-text .name {
   display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
@@ -93,8 +101,16 @@ header .intro-text .skills {
 }
 @media (min-width: 768px) {
   header .container {
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 240px;
+    padding-bottom: 220px;
+  }
+  header .big-vid {
+    position: relative;
+    top: 80px;
+  }
+  header .big-vid .arrow {
+    position: relative;
+    top: 50px;
   }
   header .intro-text .name {
     font-size: 4.75em;
@@ -103,9 +119,47 @@ header .intro-text .skills {
     font-size: 1.75em;
   }
 }
+#contact {
+  background: #fff;
+  background-image: url(../img/veggie-pattern.png);
+  background-position: center;
+  background-size: cover;
+}
+#contact .recipes-description {
+  color: #166432;
+  margin-bottom: 30px;
+}
+#contact .recipes-description h1 {
+  letter-spacing: .5px;
+  text-transform: none;
+  margin: 0;
+  font-size: 54px;
+  font-weight: 100;
+}
+#contact .recipes-description p {
+  color: #1d8241;
+  padding-left: 45px;
+  letter-spacing: .5px;
+  font-size: 22px;
+  font-weight: 100;
+}
+#contact .vid-container {
+  margin-bottom: 25px;
+}
+#contact .vid-container .share-icon {
+  position: absolute;
+  top: 130px;
+  left: 25px;
+}
+#contact .vid-container h5 {
+  letter-spacing: .5px;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: none;
+}
 .navbar-custom {
   background: #2C3E50;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
@@ -197,9 +251,19 @@ section.success {
     padding-top: 75px;
   }
 }
+#portfolio {
+  background-color: #fdc823;
+}
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
+}
+#portfolio .portfolio-item .fruta {
+  width: 148px;
+  height: 148px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding-top: 15%;
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;
@@ -237,13 +301,149 @@ section.success {
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
   margin: 0;
 }
+#portfolio .brocoli {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  background-image: url(../img/brocoli.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#portfolio .guineo {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  background-image: url(../img/guineo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#portfolio .maiz {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  background-image: url(../img/maiz.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#portfolio .tomate {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  background-image: url(../img/tomate.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#portfolio .uvas {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  background-image: url(../img/uvas.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#portfolio .zanahoria {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  background-image: url(../img/zanahoria.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#portfolio .promo-description {
+  text-align: center;
+  color: #0b7645;
+}
+#portfolio .promo-description h1 {
+  text-transform: none;
+  font-size: 4.2em;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+#portfolio .promo-description p {
+  font-size: 24px;
+}
 #portfolio * {
   z-index: 2;
+}
+.butt {
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+}
+.butt-alert,
+.butt-alert:hover,
+.butt-alert:focus,
+.butt-alert:active {
+  padding: 20px 100px;
+  font-size: 26px;
+  text-decoration: none;
+  position: relative;
+  top: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #eb3740;
+  border-bottom: 5px solid #9b1c20;
+}
+.butt-yell,
+.butt-yell:hover,
+.butt-yell:focus,
+.butt-yell:active {
+  margin-top: 30px;
+  font-size: 18px;
+  background-color: #fdc823;
+  color: #92732c;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 15px;
+  display: block;
+  border-bottom: 5px solid #92732c;
 }
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
+}
+#about {
+  background-color: #0b7645;
+}
+#about .about-panel:first-child {
+  border-right: 1px solid #fff;
+}
+#about .about-panel {
+  padding: 0 40px;
+}
+#about .about-panel h3 {
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+#about .about-panel p {
+  font-size: 25px;
+  letter-spacing: .5px;
+  line-height: 35px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+#about .lil-icons {
+  margin: 40px 0;
+}
+#about form input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 15px;
+  font-size: 16px;
+}
+#about form .butt-yell {
+  margin-top: 6px;
+  border-top: 0px;
+  border-left: 0px solid #fdc823;
+  border-right: 0px solid #fdc823;
 }
 .floating-label-form-group {
   position: relative;
@@ -295,6 +495,7 @@ form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
 footer {
+  background-color: #166432;
   color: white;
 }
 footer h3 {
@@ -308,8 +509,15 @@ footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
-  padding: 25px 0;
-  background-color: #233140;
+  padding: 50px 0;
+  background-color: #166432;
+}
+footer .footer-below a {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  font-weight: lighter;
+  letter-spacing: 1px;
 }
 .btn-outline {
   color: white;
@@ -446,9 +654,7 @@ fieldset[disabled] .btn-success.active {
 }
 .portfolio-modal .modal-content {
   border-radius: 0;
-  background-clip: border-box;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.6) !important;
   border: none;
   min-height: 100%;
   padding: 100px 0;
@@ -480,7 +686,7 @@ fieldset[disabled] .btn-success.active {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #2C3E50;
+  background-color: #fff;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -491,7 +697,7 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #2C3E50;
+  background-color: #fff;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
@@ -502,4 +708,9 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
 }
