@@ -147,6 +147,7 @@ header .intro-text .skills {
   margin-bottom: 25px;
 }
 #contact .vid-container .share-icon {
+  cursor: pointer;
   position: absolute;
   top: 130px;
   left: 25px;
@@ -390,6 +391,11 @@ section.success {
   background-color: #eb3740;
   border-bottom: 5px solid #9b1c20;
 }
+.butt-alert.volver {
+  top: 72px;
+  padding: 10px 40px;
+  font-size: 18px;
+}
 .butt-yell,
 .butt-yell:hover,
 .butt-yell:focus,
@@ -404,6 +410,21 @@ section.success {
   padding: 15px;
   display: block;
   border-bottom: 5px solid #92732c;
+}
+.calendar-header {
+  text-align: center;
+}
+.actual-calendar thead tr th,
+.actual-calendar tbody tr th {
+  font-size: 25px;
+  font-weight: bold;
+  border: 0;
+}
+.actual-calendar thead tr td,
+.actual-calendar tbody tr td {
+  font-size: 25px;
+  font-weight: lighter;
+  border: 0;
 }
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
