@@ -109,6 +109,8 @@ header {
 	}
 }
 
+
+
 @media(min-width:768px) {
 	header {
 		.container {
@@ -287,9 +289,9 @@ section.success {
         .fruta {
             width: 148px;
             height: 148px;
-            background-color: #fff;
-            border-radius: 50%;
-            padding-top: 15%;
+            // background-color: #fff;
+            // border-radius: 50%;
+            // padding-top: 15%;
         }
         .portfolio-link {
             display: block;
@@ -329,55 +331,55 @@ section.success {
         }
     }
     .brocoli {
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
-        background-image: url(../img/brocoli.png);
+        background-image: url(../img/brocoli.gif);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
     }
     .guineo {
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
-        background-image: url(../img/guineo.png);
+        background-image: url(../img/guineo.gif);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
     }
     .maiz {
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
-        background-image: url(../img/maiz.png);
+        background-image: url(../img/maiz.gif);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
     }
     .tomate {
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
-        background-image: url(../img/tomate.png);
+        background-image: url(../img/tomate.gif);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
     }
     .uvas {
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
-        background-image: url(../img/uvas.png);
+        background-image: url(../img/uvas.gif);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
     }
     .zanahoria {
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
-        background-image: url(../img/zanahoria.png);
+        background-image: url(../img/zanahoria.gif);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -398,6 +400,13 @@ section.success {
     * {
         z-index: 2;
     }
+    a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.mobile-break {
+    display:none;
 }
 
 .butt {
@@ -433,9 +442,17 @@ section.success {
     display: block;
     border-bottom: 5px solid #92732c;
 }
+div.butt.butt-alert, a div.butt.butt-alert:hover, a div.butt.butt-alert:focus, a div.butt.butt-alert:active {
+    margin: 0 auto;
+    width: 75%;
+    text-decoration: none;
+
+}
 .calendar-header {
     text-align: center;
+
 }
+
 .actual-calendar {
     thead, tbody {
         tr {
@@ -716,5 +733,97 @@ footer {
 @media (min-width: 1200px){
     .container {
         width: 1000px;
+    }
+}
+@media (max-width: 1200px){
+    #about {
+        .about-panel:first-child {
+            border-right: 0;
+        }
+    }
+}
+@media (max-width:768px) {
+    .mobile-break {
+        display:block;
+    }
+    header {
+        .container {
+            img.open-video {
+                margin-top: 100px;
+            }
+            .arrow {
+                padding-top: 30px;
+                width: 32px;
+            }
+        }
+    }
+    #portfolio {
+    //     .container {
+    //         .portfolio-item .fruta {
+    //             width: 120px;
+    //             height: 120px;
+    //         }
+    //     }
+        .promo-description {
+            text-align: left;
+        }
+        div.butt.butt-alert, a div.butt.butt-alert:hover, a div.butt.butt-alert:focus, a div.butt.butt-alert:active {
+            margin: 0 auto;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-decoration: none;
+
+        }
+    }
+    #about {
+        padding-bottom: 0;
+        .about-panel {
+            padding: 0 15px;
+        }
+        .butt-yell {
+            font-size: 15px;
+            margin-bottom: 60px;
+        }
+
+    }
+    #contact {
+        padding-bottom: 0;
+        .recipes-description {
+            p {
+                padding-left: 0;
+            }
+        }
+        .vid-container {
+            .share-icon {
+                display: none;
+            }
+        }
+    }
+    footer {
+        .footer-below {
+            .col-sm-4 {
+                margin: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .calendar-header {
+        a {
+            top: 115px !important;
+        }
+    }
+    .actual-calendar {
+        thead, tbody {
+            tr {
+                th {
+                    font-size: 15px;
+                }
+                td {
+                    font-size: 15px;
+                }
+            }
+        }
     }
 }

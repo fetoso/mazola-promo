@@ -262,9 +262,6 @@ section.success {
 #portfolio .portfolio-item .fruta {
   width: 148px;
   height: 148px;
-  background-color: #fff;
-  border-radius: 50%;
-  padding-top: 15%;
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;
@@ -303,55 +300,55 @@ section.success {
   margin: 0;
 }
 #portfolio .brocoli {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-  background-image: url(../img/brocoli.png);
+  background-image: url(../img/brocoli.gif);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 #portfolio .guineo {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-  background-image: url(../img/guineo.png);
+  background-image: url(../img/guineo.gif);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 #portfolio .maiz {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-  background-image: url(../img/maiz.png);
+  background-image: url(../img/maiz.gif);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 #portfolio .tomate {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-  background-image: url(../img/tomate.png);
+  background-image: url(../img/tomate.gif);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 #portfolio .uvas {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-  background-image: url(../img/uvas.png);
+  background-image: url(../img/uvas.gif);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 #portfolio .zanahoria {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-  background-image: url(../img/zanahoria.png);
+  background-image: url(../img/zanahoria.gif);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -371,6 +368,15 @@ section.success {
 }
 #portfolio * {
   z-index: 2;
+}
+#portfolio a:hover,
+#portfolio a:focus,
+#portfolio a:active {
+  text-decoration: none;
+  color: #fff;
+}
+.mobile-break {
+  display: none;
 }
 .butt {
   font-weight: bold;
@@ -410,6 +416,14 @@ section.success {
   padding: 15px;
   display: block;
   border-bottom: 5px solid #92732c;
+}
+div.butt.butt-alert,
+a div.butt.butt-alert:hover,
+a div.butt.butt-alert:focus,
+a div.butt.butt-alert:active {
+  margin: 0 auto;
+  width: 75%;
+  text-decoration: none;
 }
 .calendar-header {
   text-align: center;
@@ -741,5 +755,70 @@ fieldset[disabled] .btn-success.active {
 @media (min-width: 1200px) {
   .container {
     width: 1000px;
+  }
+}
+@media (max-width: 1200px) {
+  #about .about-panel:first-child {
+    border-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .mobile-break {
+    display: block;
+  }
+  header .container img.open-video {
+    margin-top: 100px;
+  }
+  header .container .arrow {
+    padding-top: 30px;
+    width: 32px;
+  }
+  #portfolio .promo-description {
+    text-align: left;
+  }
+  #portfolio div.butt.butt-alert,
+  #portfolio a div.butt.butt-alert:hover,
+  #portfolio a div.butt.butt-alert:focus,
+  #portfolio a div.butt.butt-alert:active {
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+  }
+  #about {
+    padding-bottom: 0;
+  }
+  #about .about-panel {
+    padding: 0 15px;
+  }
+  #about .butt-yell {
+    font-size: 15px;
+    margin-bottom: 60px;
+  }
+  #contact {
+    padding-bottom: 0;
+  }
+  #contact .recipes-description p {
+    padding-left: 0;
+  }
+  #contact .vid-container .share-icon {
+    display: none;
+  }
+  footer .footer-below .col-sm-4 {
+    margin: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .calendar-header a {
+    top: 115px !important;
+  }
+  .actual-calendar thead tr th,
+  .actual-calendar tbody tr th {
+    font-size: 15px;
+  }
+  .actual-calendar thead tr td,
+  .actual-calendar tbody tr td {
+    font-size: 15px;
   }
 }
