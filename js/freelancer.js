@@ -12,10 +12,25 @@
         event.preventDefault();
     });
 
+    if ($(window).width() <= 768) {
+        $('.big-vid iframe').removeAttr('width').removeAttr('height')
+    }
+
     $('.open-video').click(function() {
-        var vid = $(this).attr('data-vidUrl');
-        $('#player-modal video source').attr('src', vid);
-        $("#player-modal video")[0].load();
+        // var vid = $(this).attr('data-vidUrl');
+        // $('#player-modal video source').attr('src', vid);
+        // $("#player-modal video")[0].load();
+        var vid = $(this).attr('data-vidId');
+        $('#ytplayer').html('\
+            <iframe id="ytplayer" \
+                type="text/html" \
+                width="640" \
+                height="360"\
+                src="https://www.youtube.com/embed/' + vid + '?autoplay=1"\
+                frameborder="0"></iframe>');
+    });
+    $('.close-modal').click(function() {
+        $('#ytplayer').html('');
     });
 
     // Highlight the top nav as scrolling occurs
@@ -28,6 +43,8 @@
     $('.navbar-collapse ul li a').click(function(){
             $('.navbar-toggle:visible').click();
     });
+
+    $('#mazola-form input[name="phone"]').mask('(999) 999-9999');
 
     // Offset for Main Navigation
     $('#mainNav').affix({
