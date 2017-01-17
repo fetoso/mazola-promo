@@ -76,12 +76,12 @@ hr.star-primary:after {
 header {
   text-align: center;
   background: #fff;
-  background-image: url(../img/header-w-logo.jpg);
-  background-position: center;
+  background-image: url(../img/header-w-logo.png);
+  background-position: center top;
   background-size: cover;
 }
 header .container {
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 50px;
 }
 header img {
@@ -101,7 +101,7 @@ header .intro-text .skills {
 }
 @media (min-width: 768px) {
   header .container {
-    padding-top: 240px;
+    padding-top: 180px;
     padding-bottom: 220px;
   }
   header .big-vid {
@@ -119,6 +119,9 @@ header .intro-text .skills {
     font-size: 1.75em;
   }
 }
+span.registered {
+  font-size: 10px;
+}
 #contact {
   background: #fff;
   background-image: url(../img/veggie-pattern.png);
@@ -133,7 +136,7 @@ header .intro-text .skills {
   letter-spacing: .5px;
   text-transform: none;
   margin: 0;
-  font-size: 54px;
+  font-size: 40px;
   font-weight: 100;
 }
 #contact .recipes-description p {
